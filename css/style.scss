@@ -21,204 +21,36 @@ header {
 
 main {
 	.search-instructor {
-		margin-top: 40px;
-		.page-title {
-			font-family: "Roboto", sans-serif;
-			font-style: normal;
-			font-weight: 500;
-			line-height: normal;
-			font-size: 17px;
-			text-align: center;
-			margin-bottom: 52px;
-		}
-
 		.select-town {
 			margin-top: 40px;
 
 			.custom-select {
-				height: 45px;
-				border-radius: 0;
-				margin-bottom: 21px;
 				background: url("images/arrow.svg") no-repeat right .75rem center/8px 10px
-			}
-		}
-
-		p {
-			font-family: "Roboto", sans-serif;
-			font-size: 16px;
-			color: #9C9C9C;
-		}
-
-		.type-license {
-			margin-bottom: 21px;
-			&__item {
-				margin-right: 10px;
-				height: 45px;
-				border: 1px solid #B0B0B0;
-				line-height: 45px;
-				width: 100%;
-				text-align: center;
-				cursor: pointer;
-
-				&:hover {
-					border-color: blue;
-					color: blue;
-				}
-
-				&:last-child {
-					margin-right: 0
-				}
-			}
-
-			.active {
-				border-color: blue;
-				color: blue;
-			}
-		}
-
-		.type-car {
-			margin-bottom: 21px;
-			&__item {
-				margin-right: 10px;
-				width: 100%;
-				text-align: center;
-				text-transform: uppercase;
-				font-family: "Roboto", sans-serif;
-				font-size: 18px;
-				line-height: 45px;
-				height: 45px;
-				border: 1px solid #B0B0B0;
-				cursor: pointer;
-
-				&:hover {
-					border-color: blue;
-					color: blue;
-				}
-
-				&:last-child {
-					margin-right: 0
-				}
-			}
-
-			.active {
-				border-color: blue;
-				color: blue;
-			}
-		}
-
-		.button-sarch {
-			width: 320px;
-			height: 45px;
-			background: #B0B0B0;
-			color: #fff;
-			line-height: 45px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 500;
-			font-size: 16px;
-			text-align: center;
-			margin: 20px 0 75px;
-			cursor: pointer;
-
-			&:hover {
-				background: #999;
 			}
 		}
 	}
 
 	.instructors {
-		&__title {
-			margin: 80px 0 30px 0;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 500;
-			font-size: 16px;
-			text-align: center;
-		}
+		&__info {
+			&-item {
+				position: relative;
 
-		.instructor {
-			margin: 50px 0;
-			&__avatar {
-				text-align: center;
-				width: 40%;
-				img {
-					height: 70px;
-					width: 70px;
+				&:after {
+					content: "";
+					display: inline-block;
+					height: 20px;
+					width: 20px;
+					border: 2px solid #000000;
+					box-sizing: border-box;
+					position: absolute;
+					right: 0;
+					top: 0;
 					border-radius: 50%;
-					overflow: hidden;
-					display: block;
-					margin: auto;
-					margin-bottom: 23px;
-
-					.name {
-						font-family: 'Roboto', sans-serif;
-						font-weight: 500;
-						font-size: 16px;
-						text-align: center;
-					}
+					background: url(images/line.svg);
+					background-position: center;
+					background-size: auto;
+					background-repeat: no-repeat;
 				}
-			}
-
-			&__info {
-				width: 60%;
-				&-item {
-					position: relative;
-					font-family: 'Roboto', sans-serif;
-					line-height: 22px;
-					font-size: 12px;
-					letter-spacing: -0.03em;
-					color: #000000;
-					margin-bottom: 10px;
-					padding-right: 30px;
-
-					&:after {
-						content: "";
-						display: inline-block;
-						height: 20px;
-						width: 20px;
-						border: 2px solid #000000;
-						box-sizing: border-box;
-						position: absolute;
-						right: 0;
-						top: 0;
-						border-radius: 50%;
-						background: url(images/line.svg);
-						background-position: center;
-						background-size: auto;
-						background-repeat: no-repeat;
-					}
-				}
-			}
-		}
-	}
-
-	.advantages {
-		&__title {
-			font-family: "Roboto", sans-serif;
-			font-weight: 500;
-			line-height: normal;
-			font-size: 17px;
-			margin: 80px 0 20px 0;
-		}
-
-		.advantage {
-			margin-bottom: 21px;
-
-			.image {
-				height: 50px;
-				width: 50px;
-				margin-right: 22px;
-				background: #C4C4C4;
-				border: 1px solid #000000;
-				box-sizing: border-box;
-			}
-
-			.text {
-				width: 80%;
-				font-family: "Roboto", sans-serif;
-				line-height: 16px;
-				font-size: 12px;
-				text-align: justify;
-				letter-spacing: -0.0241176em;
-				color: #000000;
 			}
 		}
 	}
@@ -230,24 +62,10 @@ footer {
 	left: 0;
 	width: 100%;
 	height: 91px;
-	background: #C4C4C4;
 	padding: 18px 0 23px;
 
 	.footer-menu {
 		margin: 16px 0;
-
-		a {
-			font-family: 'Roboto', sans-serif;
-			color: #000;
-			font-size: 12px;
-			transition: 0.25s;
-
-			&:hover {
-				text-decoration: underline;
-				color: blue;
-				transition: 0.25s;
-			}
-		}
 	}
 
 	.social-link {
@@ -256,7 +74,6 @@ footer {
 			width: 30px;
 			height: 30px;
 			border-radius: 50%;
-			background: #fff;
 
 			a {
 				display: block;
@@ -264,12 +81,7 @@ footer {
 				height: 100%;
 				text-align: center;
 				line-height: 30px;
-				color: #DADADA;
 				font-size: 14px;
-
-				&:hover {
-					color: blue;
-				}
 			}
 		}
 	}
@@ -277,40 +89,11 @@ footer {
 
 @media screen and ( max-width: 576px ) {
 	body {
-		margin-bottom: 200px;
-	}
-
-	main {
-		.search-instructor {
-			.select-town {
-				margin-top: 0px;
-			}
-
-			.button-sarch {
-				width: 100%;
-			}
-		}
-
-		.instructors {
-			.instructor {
-				-webkit-flex-direction: column;
-				flex-direction: column;
-
-				&__avatar {
-					text-align: center;
-					width: 100%;
-					margin-bottom: 16px;
-				}
-
-				&__info {
-					width: 100%;
-				}
-			}
-		}
+		margin-bottom: 220px;
 	}
 
 	footer {
-		height: 200px;
+		height: 230px;
 		.footer-menu {
 			-webkit-flex-direction: column;
 			flex-direction: column;
